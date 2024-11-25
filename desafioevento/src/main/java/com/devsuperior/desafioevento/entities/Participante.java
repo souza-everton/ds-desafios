@@ -1,4 +1,4 @@
-package com.devsuperior.desafioevento.entites;
+package com.devsuperior.desafioevento.entities;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

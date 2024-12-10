@@ -26,6 +26,7 @@ public class Client {
 	@Column(nullable = false)
 	@PastOrPresent
 	private LocalDate birthData;
+	@Column(nullable = false)
 	private Integer children;
 	
 	public Client() {

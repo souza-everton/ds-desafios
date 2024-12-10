@@ -1,21 +1,20 @@
-INSERT INTO tb_categoria(descricao) VALUES('Curso');
-INSERT INTO tb_categoria(descricao) VALUES('Oficina');
-
-INSERT INTO tb_atividade(nome,descricao,preco,categoria_id) VALUES('Curso de HTML','Aprenda HTML de forma prática',80.00,1);
-INSERT INTO tb_atividade(nome,descricao,preco,categoria_id) VALUES('Oficina de Github','Controle versões de seus projetos',50.00,2);
-
-INSERT INTO tb_bloco(inicio,fim,atividade_id) VALUES(TIMESTAMP WITH TIME ZONE '2017-09-25T08:00:00Z',TIMESTAMP WITH TIME ZONE '2017-09-25T11:00:00Z',1);
-INSERT INTO tb_bloco(inicio,fim,atividade_id) VALUES(TIMESTAMP WITH TIME ZONE '2017-09-25T14:00:00Z',TIMESTAMP WITH TIME ZONE '2017-09-25T18:00:00Z',2);
-INSERT INTO tb_bloco(inicio,fim,atividade_id) VALUES(TIMESTAMP WITH TIME ZONE '2017-09-26T08:00:00Z',TIMESTAMP WITH TIME ZONE '2017-09-26T11:00:00Z',2);
-
-INSERT INTO tb_participante(nome,email) VALUES('José Silva','jose@gmail.com');
-INSERT INTO tb_participante(nome,email) VALUES('Tiago Faria','tiago@gmail.com');
-INSERT INTO tb_participante(nome,email) VALUES('Maria do Rosário','maria@gmail.com');
-INSERT INTO tb_participante(nome,email) VALUES('Teresa Silva','teresa@gmail.com');
-
-INSERT INTO tb_participante_atividade(participante_id,atividade_id) VALUES(1,1);
-INSERT INTO tb_participante_atividade(participante_id,atividade_id) VALUES(2,1);
-INSERT INTO tb_participante_atividade(participante_id,atividade_id) VALUES(3,1);
-INSERT INTO tb_participante_atividade(participante_id,atividade_id) VALUES(1,2);
-INSERT INTO tb_participante_atividade(participante_id,atividade_id) VALUES(3,2);
-INSERT INTO tb_participante_atividade(participante_id,atividade_id) VALUES(4,2);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Maria Silva', '12345678901', 6000.0, '1994-07-20', 2);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('João Oliveira', '23456789012', 8000.0, '1988-05-15', 3);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Ana Santos', '34567890123', 4500.0, '1990-03-10', 1);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Carlos Pereira', '45678901234', 5000.0, '1985-11-25', 2);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Beatriz Costa', '56789012345', 7200.0, '1992-07-05', 0);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Pedro Almeida', '67890123456', 3500.0, '1980-01-18', 4);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Juliana Mendes', '78901234567', 9100.0, '1997-12-12', 1);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Ricardo Lopes', '89012345678', 6200.0, '1991-09-09', 2);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Fernanda Nogueira', '90123456789', 7600.0, '1995-06-06', 3);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Gabriel Souza', '01234567890', 4300.0, '1993-04-22', 1);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Larissa Carvalho', '11234567890', 8000.0, '1989-08-30', 2);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Rafael Martins', '22345678901', 6800.0, '1996-02-14', 0);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Mariana Rocha', '33456789012', 5900.0, '1998-10-03', 1);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Thiago Lima', '44567890123', 7200.0, '1990-07-07', 3);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Camila Duarte', '55678901234', 4800.0, '1984-03-25', 0);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Lucas Ribeiro', '66789012345', 8200.0, '1987-12-01', 2);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Isabela Silva', '77890123456', 5400.0, '1991-09-17', 1);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Eduardo Gonçalves', '88901234567', 6100.0, '1993-06-11', 0);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Patrícia Barros', '99012345678', 7000.0, '1988-11-22', 2);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Rodrigo Fernandes', '10123456789', 6500.0, '1986-02-05', 3);

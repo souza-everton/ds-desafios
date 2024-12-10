@@ -25,7 +25,7 @@ public class Client {
 	private Double income;
 	@Column(nullable = false)
 	@PastOrPresent
-	private LocalDate birthData;
+	private LocalDate birthDate;
 	@Column(nullable = false)
 	private Integer children;
 	
@@ -33,12 +33,12 @@ public class Client {
 		
 	}
 
-	public Client(Long id, String name, String cpf, Double income, LocalDate birthData, Integer children) {
+	public Client(Long id, String name, String cpf, Double income, LocalDate birthDate, Integer children) {
 		this.id = id;
 		this.name = name;
 		this.cpf = cpf;
 		this.income = income;
-		this.birthData = birthData;
+		this.birthDate = birthDate;
 		this.children = children;
 	}
 
@@ -74,12 +74,12 @@ public class Client {
 		this.income = income;
 	}
 
-	public LocalDate getBirthData() {
-		return birthData;
+	public LocalDate getBirthDate() {
+		return birthDate;
 	}
 
-	public void setBirthData(LocalDate birthData) {
-		this.birthData = birthData;
+	public void setBirthDate(LocalDate birthDate) {
+		this.birthDate = birthDate;
 	}
 
 	public Integer getChildren() {
